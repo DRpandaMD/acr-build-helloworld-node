@@ -4,7 +4,7 @@ const port = 80
 
 const server = http.createServer((request, response) => {
   response.writeHead(200, {'Content-Type': 'text/plain'})
-  response.write('<h1>Hello World</h1>\n')
+  response.write('Hello From an Azure Container\n')
   response.end('Version: ' + process.env.NODE_VERSION + '\n')
 })
 
